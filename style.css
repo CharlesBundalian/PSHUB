@@ -12,6 +12,7 @@ body {
 .bg {
     margin: 0px;
     background-image: url(Images/clcbg.jpg);
+    background-repeat: no-repeat;
 }
 
 .center {
