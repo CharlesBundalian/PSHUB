@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+body {
+    margin-top: 75px;
+    background-color: aliceblue;
+}
+
+.btn:hover {
+    background-color: #0060ef;
+}
+
+.bg {
+    margin: 0px;
+    background-image: url(Images/clcbg.jpg);
+}
+
+.center {
+    margin-top: 7%;
+}
+
+.spec {
+    width: 100%;
+}
+
+a {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+}
+
+li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    bottom: 4px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+li {
+    padding-right: 1.5em;
+    list-style: none;
+}
+
+.bg-login {
+    background-color: #ffffffd9;
+    position: relative;
+    bottom: 10%;
+    top: 20%;
+}
+
+.bg-navbar {
+    background-color: rgb(54, 117, 252);
+}
+
+.sidebar {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    margin-right: -1rem;
+}
+
+.b-r{
+    border-right: none;
+    height: 92vh;
+    overflow: auto;
+}
+
+.b-l{
+    border-right: none;
+    height: 88vh;
+    overflow: auto;
+}
+
+.main {
+    background-color: white;
+    border: none;
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        background-color: white;
+        border-radius: 6px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .b-r{
+        height: fit-content;
+    }
+
+    .b-l{
+        height: fit-content;
+        position: relative;
+        overflow: visible;
+    }
+
+    li a::before {
+        content: none;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #ffffff;
+        bottom: 4px;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+}
+
+.courses a {
+    padding: 1.5rem;
+}
+
+a div:hover {
+    transform: scale(1.01);
+    transition: 200ms ease-in;
+}
+
+.navbar-brand {
+    font-family: 'Nanum Gothic Coding', monospace;
+}
